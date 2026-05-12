@@ -7,7 +7,7 @@ const Profile = () => {
   const navigate = useNavigate();
   async function handleLogout(){
     try{
-      const res=await fetch('http://127.0.0.1:8080/logout',{
+      const res=await fetch('/api/logout',{
         method:'POST',
         credentials:'include'
       })

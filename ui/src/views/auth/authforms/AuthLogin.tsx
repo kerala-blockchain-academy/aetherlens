@@ -21,7 +21,7 @@ const AuthLogin = () => {
       UserName:user,
       Password:pswd
     }
-    const result = await fetch('http://127.0.0.1:8080/login',{
+    const result = await fetch('/api/login',{
       method:'POST',
       headers:{
         'Content-Type':'application/json'
@@ -39,7 +39,7 @@ const AuthLogin = () => {
 
     }
     else{
-      await fetch("http://127.0.0.1:8080/allContracts",{credentials:'include'})
+      await fetch("/api/allContracts",{credentials:'include'})
     }
     // else{
     //   // navigate("/dash");

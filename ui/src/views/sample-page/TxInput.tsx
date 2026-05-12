@@ -20,7 +20,7 @@ const TxInput = () => {
 
   useEffect(() => {
      async function getUser(){
-    const response = await fetch("http://127.0.0.1:8080/verify",{
+    const response = await fetch("/api/verify",{
       credentials:'include'
     })
     console.log(response);
